@@ -1,0 +1,16 @@
+name: Testing
+
+on: [pull_request]
+
+jobs:
+  test:
+    name: Testing Application
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Test
+        run: yarn coverage

@@ -1,7 +1,9 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 
 import ErrorBoundary from './ErrorBoundary';
+
+afterEach(cleanup);
 
 describe('ErrorBoundary Component', () => {
   it('Should render Component', () => {

@@ -7,7 +7,8 @@ export const Authentication = ({
   responseType,
   redirectUri,
   scope,
-  children
+  children,
+  ...props
 }) => {
   const [auth, setAuth] = useState({ authenticated: false, user: {} });
 
@@ -40,7 +41,7 @@ export const Authentication = ({
   console.log('teste');
 
   return (
-    <AuthenticationContext.Provider value={{ handleSignIn, ...auth }}>
+    <AuthenticationContext.Provider value={{ handleSignIn, ...auth, ...props }}>
       {children}
     </AuthenticationContext.Provider>
   );

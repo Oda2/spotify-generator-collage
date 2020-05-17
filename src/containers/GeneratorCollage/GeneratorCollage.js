@@ -9,7 +9,7 @@ import Button from '../../components/Button';
 
 const useStyles = createUseStyles({
   root: {
-    display: 'flex',
+    // display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',

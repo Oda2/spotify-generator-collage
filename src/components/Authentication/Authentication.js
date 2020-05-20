@@ -7,8 +7,7 @@ export const Authentication = ({
   responseType,
   redirectUri,
   scope,
-  children,
-  ...props
+  children
 }) => {
   const [auth, setAuth] = useState({ authenticated: false, user: {} });
 
@@ -34,14 +33,10 @@ export const Authentication = ({
       console.log(params.access_token);
       setAuth({ ...auth, access_token: params.access_token, authenticated: true });
     }
-
-    console.log('params: ', params);
   }, [window.location.pathname]);
 
-  console.log('teste');
-
   return (
-    <AuthenticationContext.Provider value={{ handleSignIn, ...auth, ...props }}>
+    <AuthenticationContext.Provider value={{ handleSignIn, ...auth }}>
       {children}
     </AuthenticationContext.Provider>
   );

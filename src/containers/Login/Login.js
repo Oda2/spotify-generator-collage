@@ -12,7 +12,11 @@ const useStyles = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    width: '100%'
+    width: '100%',
+    backgroundImage: 'url(./images/undraw_happy_music_g6wc.svg)',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center'
   },
 });
 

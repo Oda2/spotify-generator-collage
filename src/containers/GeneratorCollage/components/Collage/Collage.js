@@ -12,6 +12,7 @@ const useStyles = createUseStyles({
     borderRadius: 3,
     padding: 10,
     transition: 'all 100ms ease-out',
+    cursor: 'pointer',
     transform: props => `rotateZ(${props.rotation}deg)`,
     zIndex: props => props.depth,
     '&:hover': {
@@ -42,8 +43,16 @@ const Collage = ({ artist }) => {
     depth: Math.floor(Math.random() * 256)
   });
 
+  const handleOpenItem = () => {
+    window.open(artist.external_urls.spotify);
+  };
+
   return (
-    <figure className={classes.photo}>
+    <figure
+      className={classes.photo}
+      onClick={handleOpenItem}
+      role="presentation"
+    >
       <img
         src={artist.images[0].url}
         alt={artist.name}

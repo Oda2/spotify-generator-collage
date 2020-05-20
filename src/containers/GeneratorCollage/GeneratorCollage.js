@@ -9,37 +9,7 @@ import Button from '../../components/Button';
 
 const useStyles = createUseStyles({
   root: {
-    // display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%'
-  },
-  galery: {
-  },
-  '@media screen and (max-width: 400px)': {
-    galery: {
-    }
-  },
-  '@media screen and (min-width: 401px)': {
-    galery: {
-    }
-  },
-  '@media screen and (min-width: 401px) and (max-width: 600px)': {
-    galery: {
-    }
-  },
-  '@media screen and (min-width: 601px) and (max-width: 800px)': {
-    galery: {
-    }
-  },
-  '@media screen and (min-width: 801px) and (max-width: 1000px)': {
-    galery: {
-    }
-  },
-  '@media screen and (min-width: 1001px)': {
-    galery: {
-    }
+    padding: '5%'
   },
 });
 

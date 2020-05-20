@@ -3,14 +3,21 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   '@global': {
+    html: {
+      height: '100%'
+    },
     body: {
       height: '100%',
-      backgroundColor: '#DDD'
+      backgroundColor: '#DDD',
+      margin: 0,
+      padding: 0,
+      boxSizing: 'border-box'
     },
   },
   main: {
     display: 'flex',
-    height: '100vh',
+    flexDirection: 'column',
+    height: '100%',
     width: '100%'
   }
 });

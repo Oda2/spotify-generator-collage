@@ -12,13 +12,31 @@ export const Authentication = ({
   const [auth, setAuth] = useState({ authenticated: false, user: {} });
 
   const handleSignIn = () => {
-    window.location.href = `${url}?client_id=${clientId}&response_type=${responseType}&redirect_uri=${redirectUri}&scope=${scope}`;
+    const width = 500;
+    const height = 500;
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2.5;
+
+    const windowFeatures = `toolbar=0,scrollbars=1,status=1,resizable=0,location=1,menuBar=0,width=${width},height=${height},top=${top},left=${left}`;
+    window.open(`${url}?client_id=${clientId}&response_type=${responseType}&redirect_uri=${redirectUri}&scope=${scope}`, 'Spotify Login', windowFeatures);
+
+    window.addEventListener('message', messageListener);
+  };
+
+  const messageListener = event => {
+    if ((event.data) && (event.data.access_token)) {
+      setAuth({
+        authenticated: true,
+        access_token: event.data.access_token,
+      });
+    }
   };
 
   useEffect(() => {
     const hash = window.location.hash.substring(1);
-
-    if (hash.length === 0) {return;}
+    if (hash.length === 0) {
+      return;
+    }
 
     const params = hash
       .split('&')
@@ -29,9 +47,11 @@ export const Authentication = ({
         return acc;
       }, []);
 
+    console.log('params: ', params);
+
     if (params.access_token) {
-      console.log(params.access_token);
-      setAuth({ ...auth, access_token: params.access_token, authenticated: true });
+      window.opener.postMessage({ access_token: params.access_token, ...params });
+      window.close();
     }
   }, [window.location.pathname]);
 

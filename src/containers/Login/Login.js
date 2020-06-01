@@ -5,7 +5,6 @@ import { createUseStyles } from 'react-jss';
 import { useAuthentication } from '../../components/Authentication';
 import Button from '../../components/Button';
 
-// #2EBD59
 const useStyles = createUseStyles({
   root: {
     display: 'flex',
@@ -13,14 +12,14 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     height: '100%',
     width: '100%',
-    backgroundImage: 'url(./images/undraw_happy_music_g6wc.svg)',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center'
+    // backgroundImage: 'url(./images/undraw_happy_music_g6wc.svg)',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundAttachment: 'fixed',
+    // backgroundPosition: 'center'
   },
 });
 
-export const Login = () => {
+const Login = () => {
   const { t } = useTranslation();
   const { handleSignIn } = useAuthentication();
   const classes = useStyles();

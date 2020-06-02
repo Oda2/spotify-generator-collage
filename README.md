@@ -4,6 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/stargazers)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/450876de-5da5-4761-b35c-e3122aaf9a8e/deploy-status)](https://app.netlify.com/sites/spotify-generator-collage/deploys)
 
 Collage generator from most listened albums on Spotify
 

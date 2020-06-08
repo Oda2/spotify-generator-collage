@@ -3,11 +3,8 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   photo: {
-    width: '20%',
-    position: 'relative',
     background: 'white',
     boxShadow: 'inset 0px 0px 50px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0,0,0,0.25)',
-    float: 'left',
     margin: 0,
     borderRadius: 3,
     padding: 10,
@@ -23,8 +20,7 @@ const useStyles = createUseStyles({
   },
   image: {
     width: '100%',
-    height: 'auto',
-    position: 'relative'
+    height: 'auto'
   },
   text: {
     marginTop: 10,
@@ -37,7 +33,7 @@ const useStyles = createUseStyles({
   }
 });
 
-const Collage = ({ artist }) => {
+const Collage = ({ position, artist }) => {
   const classes = useStyles({
     rotation: Math.random() * 41 - 10,
     depth: Math.floor(Math.random() * 256)
@@ -58,7 +54,7 @@ const Collage = ({ artist }) => {
         alt={artist.name}
         className={classes.image}
       />
-      <figcaption className={classes.text}>{artist.name}</figcaption>
+      <figcaption className={classes.text}>{position + 1} - {artist.name}</figcaption>
     </figure>
   );
 };

@@ -11,6 +11,47 @@ const useStyles = createUseStyles({
   root: {
     padding: '5%'
   },
+  button: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    width: '100%'
+  },
+  galery: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    width: 'calc(100% + 24px)',
+    margin: '-12px'
+  },
+  item: {
+    flexGrow: 0,
+    maxWidth: '20%',
+    flexBasis: '20%',
+    margin: 0,
+    '&:hover': {
+      zIndex: 1000
+    }
+  },
+  '@media (max-width: 600px)': {
+    item: {
+      maxWidth: '80%',
+      flexBasis: '80%',
+      margin: 20
+    }
+  },
+  '@media screen and (min-width: 600px) and (max-width: 900px)': {
+    item: {
+      maxWidth: '50%',
+      flexBasis: '50%'
+    }
+  },
+  '@media (min-width:900px)': {
+    item: {
+      maxWidth: '20%',
+      flexBasis: '20%',
+    }
+  }
 });
 
 const GeneratorCollage = () => {
@@ -37,18 +78,27 @@ const GeneratorCollage = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <>
       {!artists && (
-        <Button onClick={() => getTopAlbuns()}>
-          {t('GENERATE_COLLAGE')}
-        </Button>
-      )}
-      {artists && (
-        <div className={classes.galery}>
-          {artists.map(item => <Collage key={item.id} artist={item} />)}
+        <div className={classes.button}>
+          <Button onClick={() => getTopAlbuns()}>
+            {t('GENERATE_COLLAGE')}
+          </Button>
         </div>
       )}
-    </div>
+      {artists && (
+        <div className={classes.root}>
+          <div className={classes.galery}>
+            {artists.map((item, index) => (
+              <div key={item.id} className={classes.item}>
+                <Collage position={index} artist={item} />
+              </div>
+            ))
+            }
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

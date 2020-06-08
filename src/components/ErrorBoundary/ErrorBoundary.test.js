@@ -23,4 +23,4 @@ function createComponent(props = {}) {
       <h1>My Component</h1>
     </ErrorBoundary>
   );
-};
+}

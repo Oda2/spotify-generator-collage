@@ -1,6 +1,7 @@
 # Spotify Generator Collage
 
 ![Testing](https://github.com/Oda2/spotify-generator-collage/workflows/Testing/badge.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/53ec7fac4dde45f4813a22b56dc3185f)](https://app.codacy.com/gh/Oda2/spotify-generator-collage?utm_source=github.com&utm_medium=referral&utm_content=Oda2/spotify-generator-collage&utm_campaign=Badge_Grade_Settings)
 [![GitHub license](https://img.shields.io/github/license/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/stargazers)

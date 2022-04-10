@@ -8,12 +8,12 @@
   "plugins": ["jest", "react", "jsx-a11y", "prettier"],
   "env": {
     "browser": true,
-    "jest": true
+    "jest": true,
+    "es2021": true
   },
   "settings": {
     "react": {
-      "pragma": "React",
-      "version": "16.4.1"
+      "version": "detect"
     }
   },
   "rules": {
@@ -55,12 +55,16 @@
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error"
   },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "requireConfigFile": false,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
       "legacyDecorators": true
-    }
+    },
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+   }
   }
 }

@@ -6,6 +6,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/stargazers)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/450876de-5da5-4761-b35c-e3122aaf9a8e/deploy-status)](https://app.netlify.com/sites/spotify-generator-collage/deploys)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage?ref=badge_shield)
 
 Collage generator from most listened albums on Spotify
 
@@ -32,3 +33,6 @@ how to propose bugfixes and improvements, and how to build and test your changes
 
 ### License
 Licensed under [MIT](https://github.com/Oda2/spotify-generator-collage/blob/master/LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage?ref=badge_large)

@@ -34,5 +34,4 @@ how to propose bugfixes and improvements, and how to build and test your changes
 ### License
 Licensed under [MIT](https://github.com/Oda2/spotify-generator-collage/blob/master/LICENSE)
 
-
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage?ref=badge_large)

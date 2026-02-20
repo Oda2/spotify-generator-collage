@@ -1,37 +1,43 @@
 # Spotify Generator Collage
 
-![Testing](https://github.com/Oda2/spotify-generator-collage/workflows/Testing/badge.svg)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/53ec7fac4dde45f4813a22b56dc3185f)](https://app.codacy.com/gh/Oda2/spotify-generator-collage?utm_source=github.com&utm_medium=referral&utm_content=Oda2/spotify-generator-collage&utm_campaign=Badge_Grade_Settings)
-[![GitHub license](https://img.shields.io/github/license/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/issues)
-[![GitHub stars](https://img.shields.io/github/stars/Oda2/spotify-generator-collage)](https://github.com/Oda2/spotify-generator-collage/stargazers)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/450876de-5da5-4761-b35c-e3122aaf9a8e/deploy-status)](https://app.netlify.com/sites/spotify-generator-collage/deploys)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage?ref=badge_shield)
+> ⚠️ **Deprecation Notice**
+> 
+> Due to [new Spotify API access limitations](https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security), this project is in **maintenance-only mode** and is no longer actively developed.
+> 
+> The project only works for **Spotify Premium** users who want to test the functionality. Since I am no longer a Spotify Premium user, I cannot guarantee the continued functionality of the application.
 
-Collage generator from most listened albums on Spotify
+## Overview
+
+Spotify Generator Collage is a web application that generates visual collages from your most listened albums on Spotify. It connects to your Spotify account via OAuth, retrieves your top albums based on listening history, and arranges them into a customizable collage that you can view and share.
+
+## Features
+
+- **Spotify OAuth Integration** - Secure login using your Spotify account
+- **Top Albums Retrieval** - Fetches your most played albums from different time ranges (short-term, medium-term, long-term)
+- **Customizable Collages** - Choose from different grid layouts and configurations
+- **Multi-language Support** - Available in English, Portuguese, Spanish, and Japanese
+- **Export Options** - Download your generated collage as an image
+
+## How It Works
+
+1. Log in with your Spotify account
+2. Select the time range for your top albums
+3. Choose your preferred collage layout
+4. Generate and download your personalized collage
 
 ## Installation
 
-Spotify Generator collage use `yarn`
-
 ```sh
-$ yarn install
+$ npm install
 ```
 
-## Questions
+## Tech Stack
 
-For how-to questions use Github issues.
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Spotify Web API
 
-## Contributing
+## License
 
-Read our contributing guide to learn about our development process, 
-how to propose bugfixes and improvements, and how to build and test your changes.
-
-### Example
-
-![Collage](./docs/Example1.png)
-
-### License
-Licensed under [MIT](https://github.com/Oda2/spotify-generator-collage/blob/master/LICENSE)
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fspotify-generator-collage?ref=badge_large)
+Licensed under [MIT](LICENSE)

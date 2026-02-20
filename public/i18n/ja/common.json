@@ -1,6 +1,15 @@
 {
   "CANCEL": "キャンセル",
   "SAVE": "保存する",
-  "LOGIN": "Spotifyを入力してください",
-  "GENERATE_COLLAGE": "コラージュを生成する"
+  "LOGIN": "ログイン",
+  "GENERATE_COLLAGE": "コラージュを生成する",
+  "SPOTIFY_RESTRICTION_TITLE": "Spotify: 機能は一時的に利用できません",
+  "SPOTIFY_RESTRICTION_MESSAGE": "Spotifyの開発者向け新しい制限（Premium必要、1アプリ・5ユーザーに限定）により、Spotify機能が一時的に無効になっています。YouTube MusicまたはDeezerをお試しください。",
+  "SPOTIFY_RESTRICTION_LINK": "詳細情報",
+  "UNAVAILABLE": "利用不可",
+  "CLOSE": "閉じる",
+  "NOT_INTEGRATED_TITLE": "開発中の統合",
+  "NOT_INTEGRATED_MESSAGE": "現在Spotifyのみ利用可能です。YouTube MusicとDeezerはまもなく統合されます",
+  "SPOTIFY_UNAVAILABLE": "利用不可",
+  "SUPPORTED_PLATFORMS": "Spotify、YouTube Music、Deezerに対応"
 }

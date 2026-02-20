@@ -1,6 +1,15 @@
 {
-  "CANCEL": "Cancel.",  
-  "SAVE": "Save.",
-  "LOGIN": "Enter Spotify",
-  "GENERATE_COLLAGE": "Generate collage"
+  "CANCEL": "Cancel",
+  "SAVE": "Save",
+  "LOGIN": "Login",
+  "GENERATE_COLLAGE": "Generate collage",
+  "SPOTIFY_RESTRICTION_TITLE": "Spotify: Feature temporarily unavailable",
+  "SPOTIFY_RESTRICTION_MESSAGE": "Due to Spotify's new developer restrictions (requires Premium, limited to 1 app and 5 users), Spotify functionality is temporarily disabled. Please use YouTube Music or Deezer instead.",
+  "SPOTIFY_RESTRICTION_LINK": "More information",
+  "UNAVAILABLE": "Unavailable",
+  "CLOSE": "Close",
+  "NOT_INTEGRATED_TITLE": "Integration under development",
+  "NOT_INTEGRATED_MESSAGE": "Currently, only Spotify is available. YouTube Music and Deezer will be integrated soon.",
+  "SPOTIFY_UNAVAILABLE": "Unavailable",
+  "SUPPORTED_PLATFORMS": "Support for Spotify, YouTube Music and Deezer"
 }

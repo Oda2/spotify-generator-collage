@@ -6,7 +6,7 @@
   "dependencies": {
     "i18next": "^25.8.10",
     "i18next-browser-languagedetector": "^8.2.1",
-    "i18next-http-backend": "^3.0.2",
+    "i18next-http-backend": "^3.0.5",
     "i18next-intervalplural-postprocessor": "^3.0.0",
     "lucide-react": "^0.574.0",
     "react": "^19.2.4",
